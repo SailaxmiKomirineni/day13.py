@@ -1,0 +1,54 @@
+1. What are the methods and modes used in files?
+. What is Lambda Function?
+2. When we use Lambda Func? And we call Anonymous Function?
+
+4. What is Higher Order Function?
+5. What is map? And its Parameters? When we use it?
+6. What is filter? And its Parameters? When we use it?
+
+1. Files:- we put all the text or any other data in files to read and write it.
+           When building a website we use Download option, the downloaded Text/pdf would be in file format. we use file in that situation
+   Methods and modes :- open(), close(), .write(), .read(), .readlines(), "w", "r", "a".  
+   => For creating a file == open()
+   => After write close the file
+   => Before read or write we should open the file
+   => readlines prints all lines in line. //["", "", ""]
+   Format :- variable = open("filename","w") => we cannot read "r" if file is empty it gives error.
+
+   Ex:- .write(""), .read()
+     file = open("new.txt", "w")
+     file.write("Hello World")
+     file.write("Programming world in telugu\n we are learning python");
+     file.close()
+     file = open("new.txt", "r")
+     print(file.read())
+     print(file.read(5))
+
+   Output:-
+        Hello WorldProgramming world in telugu
+        we are learning python
+        Hello
+
+   Ex:- append "a", .readlines(), 
+     file = open("new.txt", "a")
+     file.write(" 30 days challenge")
+     file.close()
+     file = open("new.txt", "r")
+     print(file.read())
+
+     file = open("new.txt", "r")
+     print(file.readlines())
+
+     file = open("new.txt", "r")
+     print(file.readlines(1))
+
+   output:- Hello WorldProgramming world in telugu
+         we are learning python 30 days challenge 30 days challenge 30 days challenge 30 days challenge 30 days challenge
+        ['Hello WorldProgramming world in telugu\n', ' we are learning python 30 days challenge 30 days challenge 30 days challenge 30 days challenge 30 days challenge']
+        ['Hello WorldProgramming world in telugu\n']
+
+2. Higher Order Function:-
+   The function where we pass another function as parameter is Higher Order Function.
+
+
+
