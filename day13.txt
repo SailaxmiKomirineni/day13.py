@@ -1,10 +1,8 @@
 1. What are the methods and modes used in files?
-. What is Lambda Function?
-2. When we use Lambda Func? And we call Anonymous Function?
-
-4. What is Higher Order Function?
-5. What is map? And its Parameters? When we use it?
-6. What is filter? And its Parameters? When we use it?
+2. What is Higher Order Function?
+3. What is Lambda Function? When we use Lambda Func? And we call Anonymous Function?
+4. What is map? And its Parameters? When we use it?
+5. What is filter? And its Parameters? When we use it?
 
 1. Files:- we put all the text or any other data in files to read and write it.
            When building a website we use Download option, the downloaded Text/pdf would be in file format. we use file in that situation
@@ -49,6 +47,14 @@
 
 2. Higher Order Function:-
    The function where we pass another function as parameter is Higher Order Function.
+   => If we use return we can use the function value.
+
+=> Return :- if we use return we can pass return value as input to other function.
+=> Print :- if we prints it doesn't return 
+
+**=> Lambda :- lambda is used for higher order function. lambda func are called Anonymous function, because no need to specify any data types (or) variable
+subtration = lambda a,b : a-b
+print(subtration(5, 2))
 
 
 
