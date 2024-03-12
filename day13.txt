@@ -11,6 +11,9 @@
    => After write close the file
    => Before read or write we should open the file
    => readlines prints all lines in line. //["", "", ""]
+   => read(index) 
+   => tell() == tells we are in which index
+   => seek() == tells to start from a particular point
    Format :- variable = open("filename","w") => we cannot read "r" if file is empty it gives error.
 
    Ex:- .write(""), .read()
@@ -46,15 +49,58 @@
         ['Hello WorldProgramming world in telugu\n']
 
 2. Higher Order Function:-
-   The function where we pass another function as parameter is Higher Order Function.
+   The function where we pass as input to another function as parameter is Higher Order Function.
    => If we use return we can use the function value.
 
 => Return :- if we use return we can pass return value as input to other function.
 => Print :- if we prints it doesn't return 
+   Ex:- def addition(a,b):
+           return a+b
+       def cal(addition,c):
 
-**=> Lambda :- lambda is used for higher order function. lambda func are called Anonymous function, because no need to specify any data types (or) variable
-subtration = lambda a,b : a-b
-print(subtration(5, 2))
+=> Methods:- Lambda, map, filter etc.
 
+3. Lambda Function:-
+**=> Lambda :- lambda is used for higher order function. lambda func are called Anonymous function, because no need to specify any data types (or) variable.
+parameters == lambda keyword, parameters, return value expression
+
+***FuncName = keyword parameter:return value expression
+Ex :-
+   subtration = lambda a,b : a-b
+   square = lambda x:x*x*x
+   print(subtration(5, 2))
+   print(square(4))
+Output:-
+   3
+   64
+Function inside another func
+
+4. Map Function:- Performs a operation on each element in list.
+  parameters == function expression, iterable(list/tuple)
+
+Ex:-
+  def square(x):
+    return x*x
+  List = [1,2,3,4]
+  List1 = list(map(square,List))
+  print(List1)
+Output:-
+  [1, 4, 9, 16]
+
+Ex:-
+   my_list = [1, 2, 3, 4]
+   new = list(map(lambda x:x>2, my_list))
+   print(new)
+Output:-
+  [False, False, True, True]
+
+5. Filter Function:- To filter out a condition we use filter
+  parameters == function condition-expression, iterable(list/tuple)
+Ex:-
+   my_list = [1, 2, 3, 4]
+   new = list(filter(lambda x:x>2, my_list))
+   print(new)
+Output:- 
+  [3, 4]
 
 
